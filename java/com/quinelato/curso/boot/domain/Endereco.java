@@ -8,7 +8,7 @@ import javax.persistence.*;
 public class Endereco extends AbstractEntity<Long> {
 	
 	@Column(nullable = false)	
-	private String lograduro;
+	private String logradouro;
 	
 	@Column(nullable = false)	
 	private String bairro;
@@ -28,12 +28,12 @@ public class Endereco extends AbstractEntity<Long> {
 		
 	private String complemento;
 
-	public String getLograduro() {
-		return lograduro;
+	public String getLogradouro() {
+		return logradouro;
 	}
 
-	public void setLograduro(String lograduro) {
-		this.lograduro = lograduro;
+	public void setLogradouro(String logradouro) {
+		this.logradouro = logradouro;
 	}
 
 	public String getBairro() {
