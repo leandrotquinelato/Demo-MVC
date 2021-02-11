@@ -3,6 +3,7 @@ package com.quinelato.curso.boot.service;
 import java.util.List;
 
 import com.quinelato.curso.boot.domain.Cargo;
+import com.quinelato.curso.boot.util.PaginacaoUtil;
 
 public interface CargoService {
 
@@ -17,4 +18,6 @@ public interface CargoService {
 	List<Cargo> buscarTodos();
 
 	boolean cargoTemFuncionarios(Long id);
+	
+	PaginacaoUtil<Cargo> buscaPorPagina(int pagina, String direcao);
 }
